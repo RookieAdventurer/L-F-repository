@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>See Missing Items</title>
+<link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Enriqueta', serif;
+    background-color: #272127; /* Same color as the previous pages */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .title {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  .boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .box {
+    background-color: #008000; 
+    width: 250px; 
+    height: 150px; 
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  .box p {
+    font-size: 1em;
+  }
+  @media (max-width: 600px) {
+    .boxes {
+      flex-direction: column;
+    }
+    .box {
+      width: 80%; 
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="title">See Missing Items</div>
+  <div class="boxes">
+    <div class="box">
+      <h3>Lost & Found Board</h3>
+      <p>View a comprehensive list of missing items and contribute to the efforts of reuniting them with their owners.</p>
+    </div>
+    <div class="box">
+      <h3>Item Categories</h3>
+      <p>Explore various categories of lost items, making it easier to locate and identify any misplaced belongings.</p>
+    </div>
+    <div class="box">
+      <h3>Receive Notifications</h3>
+      <p>Receive alerts about newly reported lost items and support the search for lost possessions.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

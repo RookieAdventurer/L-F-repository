@@ -1,0 +1,164 @@
+
+body {
+    margin: 0;
+    font-family: 'Enriqueta', sans-serif;
+    background-color: #292936;
+    color: #ffffff;
+}
+
+.header {
+    background-color: #155A03;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right:auto;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.left-content {
+    width: 40%;
+    padding: 20px;
+}
+
+.right-content {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1{
+    color: white;
+    font-family: Gotu ;
+    font-size: 70px;
+}
+
+ h2 {
+    color: white;
+    font-family: Gotu ;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 40px;
+    
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    height: 100%
+    
+    
+}
+
+input[type="email"],
+input[type="password"] {
+    height: 40px; 
+    margin-top: 20px;
+}
+
+.signup-button {
+    background-color: #155A03;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    position: center;
+    margin-left: 150px;
+    width: 210px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.signup-button:hover {
+    background-color: #32a113;
+}
+
+p {
+    margin-top: 10px;
+    font-family: 'Halant', sans-serif;
+    
+}
+p1{
+    margin-top: 10px;
+    font-family: 'Halant', sans-serif;
+    margin-left: 150px;
+}
+
+
+
+
+/*
+
+.right-content {
+    width: 40%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.signup-button {
+    background-color: #155A03;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+a {
+    color: #155A03;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+*/
