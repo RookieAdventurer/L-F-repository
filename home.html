@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashesi Lost and Found</title>
+<link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;700&family=Gamja+Flower&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Enriqueta', serif;
+    background-color: #272127; 
+    color: white; 
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 100vh;
+  }
+  .sidebar {
+    background-color: darkgreen; 
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 20px;
+  }
+  .sidebar a {
+    color: white; 
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s; 
+  }
+  .sidebar a:hover {
+    background-color: #465941; 
+  }
+  .content {
+    margin-left: 220px; 
+    padding: 40px; 
+    width: calc(100% - 260px); 
+    transition: margin-left 0.2s; 
+  }
+  .welcome-message, .description, .featured-items, .testimonials {
+    margin-bottom: 30px; 
+  }
+  .welcome-message {
+    font-size: 32px; 
+    margin-bottom: 20px; 
+  }
+  .description {
+    font-size: 18px;
+    line-height: 1.6; 
+  }
+  .featured-items h3, .testimonials h3 {
+    font-size: 24px;
+    margin-bottom: 15px; 
+  }
+  .item, .testimonial {
+    background-color: #383438;
+    padding: 15px;
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+  }
+  
+  p {
+    margin: 10px 0; 
+  }
+</style>
+</head>
+<body>
+<div class="sidebar">
+    <a href="home.html">Home</a>
+    <a href="missingitems.html">Missing Items</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="settings.html">Settings</a>
+</div>
+<div class="content">
+  <div class="welcome-message">Welcome to the Ashesi Lost and Found Service</div>
+  <div class="description">
+    Lost something on campus? Found an item and looking to return it? You've come to the right place.
+    Our Lost and Found service is dedicated to reuniting lost items with their rightful owners.
+    Explore, report, and recover items with ease.
+  </div>
+  <div class="featured-items">
+    <h3>Featured Items</h3>
+    <div class="item">
+      <p><strong>Lost Laptop</strong> - Found near the Warren Library entrance</p>
+    </div>
+    <div class="item">
+      <p><strong>Keys</strong> - Set of keys found at Akonnor</p>
+    </div>
+  </div>
+  <div class="testimonials">
+    <h3>Testimonials</h3>
+    <div class="testimonial">
+      <p>"Thanks to the Lost and Found service, I was able to recover my backpack. Incredible service! - Y"</p>
+    </div>
+    <div class="testimonial">
+      <p>"Found a watch at the Ashpitch and returned it through the website. Happy to help!"</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
