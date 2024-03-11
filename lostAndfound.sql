@@ -1,21 +1,24 @@
--- Create the database
---CREATE DATABASE IF NOT EXISTS LFS2024;
---USE LFS2024;
+CREATE DATABASE
+IF NOT EXISTS LFS2024;
+USE LFS2024;
 
 -- Create the Role table
-CREATE TABLE Role (
+CREATE TABLE Role
+(
     RoleID INT PRIMARY KEY,
     RoleName VARCHAR(50) NOT NULL
 );
 
 -- Create the Status table
-CREATE TABLE Status (
+CREATE TABLE Status
+(
     StatusID INT PRIMARY KEY,
     StatusName VARCHAR(50) NOT NULL
 );
 
 -- Create the User table
-CREATE TABLE User (
+CREATE TABLE User
+(
     UserID INT PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
@@ -29,7 +32,8 @@ CREATE TABLE User (
 );
 
 -- Create the Item table
-CREATE TABLE Item (
+CREATE TABLE Item
+(
     ItemID INT PRIMARY KEY,
     ItemName VARCHAR(100) NOT NULL,
     Description TEXT,
@@ -43,13 +47,15 @@ CREATE TABLE Item (
 );
 
 -- Create the Page table
-CREATE TABLE Page (
+CREATE TABLE Page
+(
     PageID INT PRIMARY KEY,
     PageName VARCHAR(50) NOT NULL
 );
 
 -- Create the UserPageAccess table
-CREATE TABLE UserPageAccess (
+CREATE TABLE UserPageAccess
+(
     UserPageAccessID INT PRIMARY KEY,
     UserID INT,
     PageID INT,
@@ -58,7 +64,8 @@ CREATE TABLE UserPageAccess (
 );
 
 -- Create the Settings table
-CREATE TABLE Settings (
+CREATE TABLE Settings
+(
     SettingID INT PRIMARY KEY,
     UserID INT,
     SettingName VARCHAR(50) NOT NULL,
@@ -92,4 +99,3 @@ FOREIGN KEY (PageID) REFERENCES Page(PageID);
 ALTER TABLE Settings
 ADD CONSTRAINT FK_Settings_User
 FOREIGN KEY (UserID) REFERENCES User(UserID);
-
